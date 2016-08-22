@@ -4,4 +4,4 @@ See <https://github.com/jrnewell/spotify-ripper>.
 
 Example invocation in docker:
 
-    docker run -ti -v ~/.spotify-ripper:/home/spotifyripper/.spotify-ripper -v `pwd`:/home/spotifyripper/music justifiably/spotifyripper  "$@"
+    docker run -ti --rm=true -u=1001 -v ~/.spotify-ripper:/home/spotifyripper/.spotify-ripper -v `pwd`:/home/spotifyripper/music justifiably/spotifyripper  "$@"
