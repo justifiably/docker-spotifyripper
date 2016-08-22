@@ -26,7 +26,7 @@ USER spotifyripper
 ENV HOME /home/spotifyripper
 RUN mkdir /home/spotifyripper/music
 WORKDIR /home/spotifyripper/music
-VOLUME [/home/spotifyripper/.spotify-ripper, /home/spotifyripper/music]
+VOLUME ["/home/spotifyripper/.spotify-ripper", "/home/spotifyripper/music"]
 
 ENTRYPOINT ["/usr/local/bin/spotify-ripper"]
 
