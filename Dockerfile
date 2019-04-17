@@ -4,7 +4,7 @@ ENV DEBIAN_FRONTEND=noninteractive
 
 # Use local copies of these
 # https://developer.spotify.com/download/libspotify/libspotify-12.1.51-Linux-x86_64-release.tar.gz
-# wget https://github.com/ElectryDev/spotify-ripper/archive/master.tar.gz -o spo
+# wget https://github.com/ElectryDev/spotify-ripper/archive/master.tar.gz
 ADD libspotify-12.1.51-Linux-x86_64-release.tar.gz /tmp/
 ADD spotifyripper.tgz /tmp
 ADD unicode.patch /tmp
