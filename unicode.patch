@@ -1,0 +1,13 @@
+diff --git a/spotify_ripper/utils.py b/spotify_ripper/utils.py
+index 4dd3168..7539f69 100644
+--- a/spotify_ripper/utils.py
++++ b/spotify_ripper/utils.py
+@@ -70,7 +70,7 @@ def to_ascii(_str, on_error='ignore'):
+     args = get_args()
+     if sys.version_info >= (3, 0):
+         if isinstance(_str, bytes) and not args.ascii:
+-            return str(_str, "utf-8")
++            return _str.encode("utf-8")
+         elif isinstance(_str, str) and args.ascii:
+             return _str.encode("ascii", on_error).decode("utf-8")
+         else:
